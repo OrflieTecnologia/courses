@@ -3,15 +3,38 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Orflie — Cursos de Closer e SDR</title>
-  <meta name="description" content="Forme-se em vendas de alta performance com os cursos de Closer e SDR da Orflie. Aprenda prospecção, qualificação e fechamento na prática." />
+  <title>Orflie - Plataforma de Cursos</title>
+
+  <!-- ===== SEO ===== -->
+  <meta name="description" content="Plataforma de cursos de vendas da Orflie. Forme-se como SDR ou Closer com metodologia prática: prospecção, qualificação, negociação e fechamento." />
+  <meta name="keywords" content="curso de SDR, curso de Closer, cursos de vendas, prospecção, qualificação de leads, fechamento de vendas, Orflie, sales outsourcing, treinamento comercial" />
+  <meta name="author" content="Orflie" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#F85916" />
+  <link rel="canonical" href="https://cursos.orflie.com/" />
+
+  <!-- Open Graph (WhatsApp, Facebook, LinkedIn) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Orflie" />
+  <meta property="og:locale" content="pt_BR" />
+  <meta property="og:title" content="Orflie - Plataforma de Cursos" />
+  <meta property="og:description" content="Forme-se como SDR ou Closer com metodologia prática de vendas. Do primeiro contato ao fechamento." />
+  <meta property="og:url" content="https://cursos.orflie.com/" />
+  <meta property="og:image" content="https://cursos.orflie.com/assets/images/image.png" />
+  <meta property="og:image:alt" content="Equipe de vendas da Orflie em treinamento" />
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Orflie - Plataforma de Cursos" />
+  <meta name="twitter:description" content="Forme-se como SDR ou Closer com metodologia prática de vendas. Do primeiro contato ao fechamento." />
+  <meta name="twitter:image" content="https://cursos.orflie.com/assets/images/image.png" />
 
   <!-- Favicon -->
   <link rel="icon" href="assets/images/favicon.ico" sizes="any" />
   <link rel="shortcut icon" href="assets/images/favicon.ico" />
 
   <!-- ===== Segurança aplicável via meta (as demais vêm por HTTP header) ===== -->
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; base-uri 'self'; form-action 'self'; object-src 'none'" />
   <meta name="referrer" content="strict-origin-when-cross-origin" />
 
   <!-- ===== Fontes ===== -->
@@ -31,6 +54,39 @@
 
   <!-- ===== CSS da Orflie ===== -->
   <link rel="stylesheet" href="assets/css/style.css" />
+
+  <!-- ===== Dados estruturados (JSON-LD) ===== -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "EducationalOrganization",
+        "@id": "https://cursos.orflie.com/#organizacao",
+        "name": "Orflie",
+        "url": "https://cursos.orflie.com/",
+        "logo": "https://cursos.orflie.com/assets/images/orflie-light.png",
+        "description": "Plataforma de cursos de vendas da Orflie: formação prática para SDR e Closer.",
+        "sameAs": [
+          "https://www.instagram.com/orflie_group/",
+          "https://www.linkedin.com/company/orflie/"
+        ]
+      },
+      {
+        "@type": "Course",
+        "name": "Curso de SDR",
+        "description": "Sales Development Representative: prospecção ativa, qualificação de leads (BANT, GPCT), cadências, uso de CRM e agendamento de reuniões qualificadas.",
+        "provider": { "@id": "https://cursos.orflie.com/#organizacao" }
+      },
+      {
+        "@type": "Course",
+        "name": "Curso de Closer",
+        "description": "Especialista em fechamento: condução de reuniões, técnicas de negociação e rapport, quebra de objeções e follow-up estratégico.",
+        "provider": { "@id": "https://cursos.orflie.com/#organizacao" }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
 
