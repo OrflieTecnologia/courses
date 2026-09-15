@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Orflie — Cursos de Closer e SDR</title>
+  <meta name="description" content="Forme-se em vendas de alta performance com os cursos de Closer e SDR da Orflie. Aprenda prospecção, qualificação e fechamento na prática." />
+
+  <!-- ===== Segurança aplicável via meta (as demais vêm por HTTP header) ===== -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self' https://cdn.jsdelivr.net https://fonts.googleapis.com 'unsafe-inline'; font-src 'self' https://cdn.jsdelivr.net https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com data:; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'; object-src 'none'" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- ===== Fontes ===== -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- ===== Bootstrap 5 CSS ===== -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <!-- ===== Bootstrap Icons ===== -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+  <!-- ===== CSS da Orflie ===== -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img class="js-logo" data-variant="light" src="assets/images/orflie-light.png" alt="Orflie" />
+      </a>
+      <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-label="Abrir menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#cursos">Cursos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#beneficios">Benefícios</a></li>
+          <li class="nav-item"><a class="nav-link" href="#depoimentos">Depoimentos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-primary px-4" href="#contato">Inscreva-se</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="badge rounded-pill mb-3 px-3 py-2" style="background:var(--orflie-primary)">
+            <i class="bi bi-lightning-charge-fill me-1"></i> Sales Outsourcing
+          </span>
+          <h1 class="mb-3">Torne-se um profissional de vendas <span class="highlight">imparável</span></h1>
+          <p class="lead mb-4">
+            Domine as técnicas de prospecção e fechamento com os cursos de
+            <strong>SDR</strong> e <strong>Closer</strong> da Orflie. Do primeiro
+            contato ao "sim" do cliente.
+          </p>
+          <div class="hero-actions d-flex flex-wrap gap-3">
+            <a href="#cursos" class="btn btn-primary btn-lg">Ver os cursos</a>
+            <a href="#contato" class="btn btn-outline-light btn-lg">Falar com a equipe</a>
+          </div>
+          <div class="hero-checks d-flex flex-wrap gap-4 mt-4">
+            <span class="hero-check"><i class="bi bi-check-circle-fill me-1"></i> Certificado incluso</span>
+            <span class="hero-check"><i class="bi bi-check-circle-fill me-1"></i> Aulas práticas</span>
+            <span class="hero-check"><i class="bi bi-check-circle-fill me-1"></i> Suporte dos mentores</span>
+          </div>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img
+            class="hero-img img-fluid"
+            src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=800&q=80"
+            alt="Equipe de vendas em treinamento"
+          />
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FAIXA DE ESTATÍSTICAS -->
+  <div class="container">
+    <div class="stats-band py-4 px-3">
+      <div class="row text-center g-3">
+        <div class="col-6 col-md-3 stat-item border-end">
+          <div class="stat-number">+<span>500</span></div>
+          <small class="text-muted-2">Alunos formados</small>
+        </div>
+        <div class="col-6 col-md-3 stat-item border-end">
+          <div class="stat-number"><span>2</span></div>
+          <small class="text-muted-2">Trilhas de carreira</small>
+        </div>
+        <div class="col-6 col-md-3 stat-item border-end">
+          <div class="stat-number"><span>95</span>%</div>
+          <small class="text-muted-2">Satisfação</small>
+        </div>
+        <div class="col-6 col-md-3 stat-item">
+          <div class="stat-number"><span>100</span>%</div>
+          <small class="text-muted-2">Prático</small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CURSOS -->
+  <section id="cursos" class="py-5 mt-4">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="kicker">Nossos cursos</span>
+        <h2 class="section-title">Escolha a sua trilha em vendas</h2>
+        <p class="text-muted-2">Do topo do funil ao fechamento — temos a formação certa para você.</p>
+      </div>
+
+      <div class="row g-4">
+        <!-- CURSO SDR -->
+        <div class="col-lg-6">
+          <div class="card course-card shadow-sm">
+            <div class="course-header sdr">
+              <i class="bi bi-telephone-outbound course-icon"></i>
+              <span class="badge bg-light text-dark badge-course mb-2">TRILHA 01</span>
+              <h3 class="fw-bold mb-1">Curso de SDR</h3>
+              <p class="mb-0 opacity-75">Sales Development Representative</p>
+            </div>
+            <div class="card-body p-4 p-md-5">
+              <p class="text-muted-2">
+                O ponto de partida das vendas. Aprenda a prospectar, qualificar leads
+                e gerar oportunidades reais para o time comercial.
+              </p>
+              <ul class="list-unstyled course-list mb-4">
+                <li><i class="bi bi-check2-circle me-2"></i>Prospecção ativa (cold call e cold mail)</li>
+                <li><i class="bi bi-check2-circle me-2"></i>Qualificação de leads (BANT, GPCT)</li>
+                <li><i class="bi bi-check2-circle me-2"></i>Cadências e uso de CRM</li>
+                <li><i class="bi bi-check2-circle me-2"></i>Agendamento de reuniões qualificadas</li>
+              </ul>
+              <a href="#contato" class="btn btn-outline-primary w-100">Quero ser SDR</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- CURSO CLOSER -->
+        <div class="col-lg-6">
+          <div class="card course-card shadow-sm">
+            <div class="course-header closer">
+              <i class="bi bi-trophy course-icon"></i>
+              <span class="badge bg-light text-dark badge-course mb-2">TRILHA 02</span>
+              <h3 class="fw-bold mb-1">Curso de Closer</h3>
+              <p class="mb-0 opacity-75">Especialista em Fechamento</p>
+            </div>
+            <div class="card-body p-4 p-md-5">
+              <p class="text-muted-2">
+                A arte de fechar negócios. Conduza negociações, contorne objeções
+                e transforme oportunidades em vendas concretizadas.
+              </p>
+              <ul class="list-unstyled course-list mb-4">
+                <li><i class="bi bi-check2-circle me-2"></i>Condução de reuniões e diagnóstico</li>
+                <li><i class="bi bi-check2-circle me-2"></i>Técnicas de negociação e rapport</li>
+                <li><i class="bi bi-check2-circle me-2"></i>Quebra de objeções</li>
+                <li><i class="bi bi-check2-circle me-2"></i>Fechamento e follow-up estratégico</li>
+              </ul>
+              <a href="#contato" class="btn btn-primary w-100">Quero ser Closer</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENEFÍCIOS -->
+  <section id="beneficios" class="py-5 mt-4">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="kicker">Diferenciais</span>
+        <h2 class="section-title">Por que estudar na Orflie?</h2>
+        <p class="text-muted-2">Metodologia prática e voltada para o mercado.</p>
+      </div>
+      <div class="row g-4 text-center">
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-briefcase"></i></div>
+            <h5 class="fw-bold">Foco no mercado</h5>
+            <p class="text-muted-2 mb-0">Conteúdo alinhado ao que as empresas realmente buscam em vendas.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-people"></i></div>
+            <h5 class="fw-bold">Mentores atuantes</h5>
+            <p class="text-muted-2 mb-0">Aprenda com profissionais que vivem o dia a dia comercial.</p>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="feature-card">
+            <div class="feature-icon"><i class="bi bi-award"></i></div>
+            <h5 class="fw-bold">Certificação</h5>
+            <p class="text-muted-2 mb-0">Receba certificado de conclusão para valorizar seu currículo.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DEPOIMENTOS -->
+  <section id="depoimentos" class="py-5 mt-4 bg-white">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="kicker">Depoimentos</span>
+        <h2 class="section-title">O que dizem nossos alunos</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card testimonial-card p-2">
+            <div class="card-body">
+              <p class="stars mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></p>
+              <p class="fst-italic">"Comecei como SDR e em poucos meses fui promovido. O curso foi decisivo."</p>
+              <div class="d-flex align-items-center mt-3">
+                <div class="avatar me-2">JS</div>
+                <div><strong>João Silva</strong><br><small class="text-muted-2">SDR na TechCorp</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card testimonial-card p-2">
+            <div class="card-body">
+              <p class="stars mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></p>
+              <p class="fst-italic">"As técnicas de fechamento mudaram completamente meus resultados."</p>
+              <div class="d-flex align-items-center mt-3">
+                <div class="avatar me-2">MA</div>
+                <div><strong>Maria Almeida</strong><br><small class="text-muted-2">Closer na SaaS Inc</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card testimonial-card p-2">
+            <div class="card-body">
+              <p class="stars mb-2"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></p>
+              <p class="fst-italic">"Conteúdo direto ao ponto e muito prático. Recomendo demais!"</p>
+              <div class="d-flex align-items-center mt-3">
+                <div class="avatar me-2">PR</div>
+                <div><strong>Pedro Rocha</strong><br><small class="text-muted-2">Consultor de Vendas</small></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" class="py-5 mt-4">
+    <div class="container">
+      <div class="text-center mb-5">
+        <span class="kicker">Dúvidas</span>
+        <h2 class="section-title">Perguntas Frequentes</h2>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                  Preciso de experiência prévia em vendas?
+                </button>
+              </h2>
+              <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted-2">Não! O curso de SDR foi pensado para iniciantes. O de Closer é ideal para quem já tem alguma base e quer evoluir para o fechamento.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                  As aulas são online ou presenciais?
+                </button>
+              </h2>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted-2">Defina aqui o formato do seu curso (online, presencial ou híbrido).</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                  Recebo certificado ao concluir?
+                </button>
+              </h2>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body text-muted-2">Sim, ao concluir você recebe o certificado de conclusão da Orflie.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA / CONTATO -->
+  <section id="contato" class="py-5 hero mt-4">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <span class="kicker" style="color:#fff">Vagas abertas</span>
+          <h2 class="fw-bold mb-3">Pronto para começar?</h2>
+          <p class="lead mb-0">Preencha o formulário e nossa equipe entrará em contato para tirar suas dúvidas e apresentar as próximas turmas.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="card border-0 shadow-lg" style="border-radius:var(--radius)">
+            <div class="card-body p-4 p-md-5">
+              <!-- Ajuste o action para o seu backend / serviço de formulário -->
+              <form>
+                <div class="mb-3">
+                  <label class="form-label fw-500">Nome completo</label>
+                  <input type="text" class="form-control" placeholder="Seu nome" required />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">E-mail</label>
+                  <input type="email" class="form-control" placeholder="voce@email.com" required />
+                </div>
+                <div class="mb-3">
+                  <label class="form-label">Curso de interesse</label>
+                  <select class="form-select" required>
+                    <option value="" selected disabled>Selecione...</option>
+                    <option>SDR</option>
+                    <option>Closer</option>
+                    <option>Os dois</option>
+                  </select>
+                </div>
+                <button type="submit" class="btn btn-primary w-100 btn-lg">Quero me inscrever</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <div class="footer-logo mb-2">
+            <img class="js-logo" data-variant="dark" src="assets/images/orflie-dark.png" alt="Orflie" />
+          </div>
+          <p class="mb-0 small">© 2026 Orflie · Sales Outsourcing. Todos os direitos reservados.</p>
+        </div>
+        <div class="col-md-6 text-center text-md-end mt-3 mt-md-0">
+          <a href="https://www.instagram.com/orflie_group/" target="_blank" rel="noopener noreferrer" class="me-2 social-icon" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.linkedin.com/company/orflie/posts/?feedView=all" target="_blank" rel="noopener noreferrer" class="me-2 social-icon" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="https://wa.me/551523980186" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Bootstrap 5 JS ===== -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
+  <!-- ===== JS da Orflie ===== -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
