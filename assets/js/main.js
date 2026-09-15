@@ -33,4 +33,16 @@
       img.addEventListener('error', function () { applyLogoFallback(img); });
     }
   });
+
+  /* ---- Carrossel de depoimentos: duplica os cards p/ loop contínuo ---- */
+  var track = document.querySelector('.testimonials-track');
+  var reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (track && !reduceMotion) {
+    var items = Array.prototype.slice.call(track.children);
+    items.forEach(function (node) {
+      var clone = node.cloneNode(true);
+      clone.setAttribute('aria-hidden', 'true');
+      track.appendChild(clone);
+    });
+  }
 })();
