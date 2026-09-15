@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Gerador da og:image — Orflie</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', system-ui, sans-serif; background: #f7f8fa; color: #383E42; margin: 0; padding: 2rem 1rem; text-align: center; }
+    h1 { font-family: 'Poppins', sans-serif; }
+    canvas { max-width: 100%; height: auto; border: 1px solid #ddd; border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.12); }
+    .btn { display: inline-block; margin-top: 1.25rem; background: #F85916; color: #fff; border: none; font-weight: 600; font-size: 1rem; padding: .8rem 2rem; border-radius: 50rem; cursor: pointer; }
+    .btn:hover { background: #d8480c; }
+    ol { display: inline-block; text-align: left; max-width: 520px; color: #555; line-height: 1.6; }
+    code { background: #eef0f2; padding: .1rem .35rem; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <h1>Gerador da imagem de compartilhamento</h1>
+  <p>Pré-visualização da <strong>og:image</strong> (1200×630) da Orflie:</p>
+  <canvas id="og" width="1200" height="630"></canvas>
+  <div><button id="baixar" class="btn">⬇ Baixar PNG</button></div>
+  <ol>
+    <li>Clique em <strong>Baixar PNG</strong>.</li>
+    <li>Salve o arquivo como <code>og-image.png</code> dentro de <code>assets/images/</code>.</li>
+    <li>Pronto! A landing já aponta para essa imagem no compartilhamento.</li>
+  </ol>
+  <script src="assets/js/og-generator.js"></script>
+</body>
+</html>
