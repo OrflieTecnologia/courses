@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://courses-red-pi.vercel.app/sitemap.xml
+Sitemap: https://courses.orflie.lat/sitemap.xml
