@@ -42,6 +42,25 @@
     var submitBtn = form.querySelector('button[type="submit"]');
     var btnLabel = submitBtn.innerHTML;
 
+    /* Máscara de telefone: (99) 9999-9999 ou (99) 99999-9999 */
+    var phone = document.getElementById('f-telefone');
+    if (phone) {
+      phone.addEventListener('input', function () {
+        var d = phone.value.replace(/\D/g, '').slice(0, 11);
+        var out = d;
+        if (d.length > 10) {
+          out = '(' + d.slice(0, 2) + ') ' + d.slice(2, 7) + '-' + d.slice(7);
+        } else if (d.length > 6) {
+          out = '(' + d.slice(0, 2) + ') ' + d.slice(2, 6) + '-' + d.slice(6);
+        } else if (d.length > 2) {
+          out = '(' + d.slice(0, 2) + ') ' + d.slice(2);
+        } else if (d.length > 0) {
+          out = '(' + d;
+        }
+        phone.value = out;
+      });
+    }
+
     var showFeedback = function (type, msg) {
       feedback.innerHTML = '';
       var div = document.createElement('div');
