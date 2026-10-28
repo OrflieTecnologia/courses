@@ -1,7 +1,7 @@
 /* ============================================================
    Gerador da og:image (1200x630) da Orflie.
-   Abra og-generator.html, clique em "Baixar PNG" e salve como
-   og-image.png dentro de assets/images/.
+   Abra og-generator.html, clique em "Baixar JPG" e salve como
+   og-image.jpg dentro de assets/images/.
    ============================================================ */
 (function () {
   'use strict';
@@ -83,8 +83,8 @@
   function download() {
     var canvas = document.getElementById('og');
     var a = document.createElement('a');
-    a.download = 'og-image.png';
-    a.href = canvas.toDataURL('image/png');
+    a.download = 'og-image.jpg';
+    a.href = canvas.toDataURL('image/jpeg', 0.88); // JPG leve: WhatsApp ignora imagens grandes
     a.click();
   }
 
